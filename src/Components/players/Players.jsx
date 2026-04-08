@@ -10,10 +10,10 @@ const Players = ({fetchPlayers, setCoin, coin}) => {
         <div className=' mx-auto w-[80%]'>
 
             <div className='flex justify-between items-center mb-5'>
-                {selectedButton ? <h1 className=' font-bold md:text-2xl'>Available Players</h1> : <h1 className=' font-bold md:text-2xl'>Selected Players</h1>}
+                {selectedButton ? <h1 className=' font-bold md:text-2xl'>Available Players</h1> : <h1 className=' font-bold md:text-2xl'>Selected Players({selectedPlayers.length})</h1>}
                 <div className='flex'>
                     <button onClick={()=> (setSelectedButton(!selectedButton))} className={`btn ${selectedButton ? 'bg-[#E7FE29]' : 'text-[#13131371]'}  rounded-l-xl rounded-r-none`}>Available</button>
-                    <button onClick={()=> (setSelectedButton(!selectedButton))} className={`btn ${!selectedButton ? 'bg-[#E7FE29]' : 'text-[#13131371]'}  rounded-r-xl rounded-l-none`}>Selected</button>
+                    <button onClick={()=> (setSelectedButton(!selectedButton))} className={`btn ${!selectedButton ? 'bg-[#E7FE29]' : 'text-[#13131371]'}  rounded-r-xl rounded-l-none`}>Selected({selectedPlayers.length}/{players.length})</button>
                 </div>
             </div>
             
