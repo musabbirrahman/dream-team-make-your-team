@@ -5,7 +5,7 @@
     "position": "Goalkeeper",
     "rating": 89,
     "foot": "Right",
-    "price": "€30M",
+    "price": "30",
     "club": "Aston Villa",
     "image": "https://i.ibb.co.com/MkQ09s33/Martinez-2-jpg.webp"
   },
@@ -15,7 +15,7 @@
     "position": "Right Back",
     "rating": 85,
     "foot": "Right",
-    "price": "€25M",
+    "price": "25",
     "club": "Atletico Madrid",
     "image": "https://i.ibb.co.com/24cYGmN/1245510198.webp"
   },
@@ -25,7 +25,7 @@
     "position": "Center Back",
     "rating": 87,
     "foot": "Right",
-    "price": "€55M",
+    "price": "55",
     "club": "Tottenham Hotspur",
     "image": "https://i.ibb.co.com/6R6n2s7S/how-many-games-will-cristian-02-07-26.webp"
   },
@@ -35,7 +35,7 @@
     "position": "Center Back",
     "rating": 86,
     "foot": "Left",
-    "price": "€50M",
+    "price": "50",
     "club": "Manchester United",
     "image": "https://i.ibb.co.com/Q3bHdS1F/lisandro-martinez-argentina-celebrates-winning-783795791.webp"
   },
@@ -45,7 +45,7 @@
     "position": "Left Back",
     "rating": 84,
     "foot": "Left",
-    "price": "€20M",
+    "price": "20",
     "club": "Sevilla",
     "image": "https://i.ibb.co.com/FqDBMF94/marcos-acuna-wolverhampton-wanderers-world-cup-argentina-sevilla-la-liga-transfer-news-acuna-seville.avif"
   },
@@ -55,7 +55,7 @@
     "position": "Midfielder",
     "rating": 86,
     "foot": "Right",
-    "price": "€40M",
+    "price": "40",
     "club": "Atletico Madrid",
     "image": "https://i.ibb.co.com/XxvL7mSK/1448083168.webp"
   },
@@ -65,7 +65,7 @@
     "position": "Midfielder",
     "rating": 88,
     "foot": "Right",
-    "price": "€80M",
+    "price": "80",
     "club": "Chelsea",
     "image": "https://i.ibb.co.com/r9g5Drs/20221218-Enzo-Fernandez-jpg.webp"
   },
@@ -75,7 +75,7 @@
     "position": "Midfielder",
     "rating": 87,
     "foot": "Right",
-    "price": "€65M",
+    "price": "65",
     "club": "Liverpool",
     "image": "https://i.ibb.co.com/GS9fH4w/2159978628.webp"
   },
@@ -85,7 +85,7 @@
     "position": "Right Winger",
     "rating": 93,
     "foot": "Left",
-    "price": "€35M",
+    "price": "35",
     "club": "Inter Miami",
     "image": "https://i.ibb.co.com/JDKbkTG/2023-10-12-T130729-Z-1121535051-RC2-L8-Y9-RQMNX-RTRMADP-3-SOCCER-WORLDCUP-2030-SPONSORS-1698761008.webp"
   },
@@ -95,7 +95,7 @@
     "position": "Striker",
     "rating": 87,
     "foot": "Right",
-    "price": "€70M",
+    "price": "70",
     "club": "Manchester City",
     "image": "https://i.ibb.co.com/pjdNQ4yJ/gettyimages-2159872242.jpg"
   },
@@ -105,7 +105,7 @@
     "position": "Left Winger",
     "rating": 86,
     "foot": "Left",
-    "price": "€10M",
+    "price": "10",
     "club": "Benfica",
     "image": "https://i.ibb.co.com/MxLBDQTm/302576.jpg"
   }

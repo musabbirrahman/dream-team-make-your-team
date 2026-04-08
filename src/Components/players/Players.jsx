@@ -1,7 +1,8 @@
 import React, { use, useState } from 'react';
 import AvailablePlayers from './AvailablePlayers/AvailablePlayers';
+import SelectedPlayers from './SelectedPlayers/SelectedPlayers';
 
-const Players = ({fetchPlayers}) => {
+const Players = ({fetchPlayers, setCoin, coin}) => {
     const players = use(fetchPlayers)
     const [selectedButton, setSelectedButton] = useState(true)
     return (
@@ -15,7 +16,7 @@ const Players = ({fetchPlayers}) => {
                 </div>
             </div>
             
-            <AvailablePlayers players={players}></AvailablePlayers>
+            {selectedButton ? <AvailablePlayers coin={coin} setCoin={setCoin} players={players}></AvailablePlayers> : <SelectedPlayers></SelectedPlayers>}
 
         </div>
     );
