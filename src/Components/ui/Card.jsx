@@ -3,7 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
 import { HiH1 } from "react-icons/hi2";
 import { MdStadium } from "react-icons/md";
-const Card = ({player, setCoin, coin}) => {
+const Card = ({player, setCoin, coin, selectedPlayers, setSelectedPlayers}) => {
     const [isSelected, setIsSelected] = useState(false)
     const handleSelectedPlayer =() => {
         if(coin < player.price){
@@ -14,6 +14,8 @@ const Card = ({player, setCoin, coin}) => {
 
         setCoin(coin - player.price);
         alert(`Selected ${player.name}`)
+
+        setSelectedPlayers([...selectedPlayers, player]);
         
 
 
