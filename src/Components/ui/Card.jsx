@@ -3,17 +3,18 @@ import { FaUser } from "react-icons/fa";
 import { FaFlag } from "react-icons/fa";
 import { HiH1 } from "react-icons/hi2";
 import { MdStadium } from "react-icons/md";
+import { toast } from 'react-toastify';
 const Card = ({player, setCoin, coin, selectedPlayers, setSelectedPlayers}) => {
     const [isSelected, setIsSelected] = useState(false)
     const handleSelectedPlayer =() => {
         if(coin < player.price){
-            alert("Not enough coin to select this player")
+            toast.error("Not enough coin to select this player")
             return;
         }
         setIsSelected(!isSelected);
 
         setCoin(coin - player.price);
-        alert(`Selected ${player.name}`)
+        toast.success(`Selected ${player.name}`)
 
         setSelectedPlayers([...selectedPlayers, player]);
         

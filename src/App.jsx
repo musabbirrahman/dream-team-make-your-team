@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Components/Homepage/Banner/Banner";
 import Navbar from "./Components/Navbar/Navbar";
 import Players from "./Components/players/Players";
+import { ToastContainer, toast } from 'react-toastify';
 
 
 
@@ -20,6 +21,8 @@ function App() {
         
         <Players coin={coin} setCoin={setCoin} fetchPlayers={fetchPlayers}></Players>
       </Suspense>
+
+      <ToastContainer />
     </>
   );
 }

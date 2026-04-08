@@ -1,5 +1,6 @@
 import React from "react";
 import { RiDeleteBinLine } from "react-icons/ri";
+import { toast } from "react-toastify";
 
 
 const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin }) => {
@@ -7,7 +8,8 @@ const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin })
     const handleDeleteSelecedPlayers = (player)=>{
         const filterSelectedPlayer = selectedPlayers.filter(selectedPlayer => selectedPlayer.name != player.name)
         setSelectedPlayers(filterSelectedPlayer);
-        setCoin(coin + Number(player.price))
+        setCoin(coin + Number(player.price));
+        toast.warning(`Removed ${player.name}`)
     }
   
   return (
@@ -17,7 +19,7 @@ const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin })
             <div className="flex gap-2">
                 <img className="w-[80px] h-[80px] rounded-2xl" src={player.image} alt={player.name} />
                 <div>
-                    <h2 className="font-semibold text-2xl">{player.name}</h2>
+                    <h2 className="font-semibold md:text-2xl">{player.name}</h2>
                     <p className="text-[#13131383]">{player.position}</p>
                 </div>
             </div>
