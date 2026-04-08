@@ -17,7 +17,7 @@ const Players = ({fetchPlayers, setCoin, coin}) => {
                 </div>
             </div>
             
-            {selectedButton ? <AvailablePlayers coin={coin} setCoin={setCoin} setSelectedPlayers = {setSelectedPlayers} selectedPlayers = {selectedPlayers} players={players}></AvailablePlayers> : <SelectedPlayers selectedPlayers = {selectedPlayers}></SelectedPlayers>}
+            {selectedButton ? <AvailablePlayers coin={coin} setCoin={setCoin} setSelectedPlayers = {setSelectedPlayers} selectedPlayers = {selectedPlayers} players={players}></AvailablePlayers> : <SelectedPlayers coin={coin} setCoin={setCoin} setSelectedPlayers={setSelectedPlayers} selectedPlayers = {selectedPlayers}></SelectedPlayers>}
 
         </div>
     );
