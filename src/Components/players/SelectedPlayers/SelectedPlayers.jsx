@@ -1,11 +1,12 @@
 import React from "react";
-import { RiDeleteBinLine } from "react-icons/ri";
+
 import { toast } from "react-toastify";
+import SelectedCard from "../../ui/SelectedCard";
 
 
 const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin }) => {
 
-    const handleDeleteSelecedPlayers = (player)=>{
+    const handleDeleteSelectedPlayers = (player)=>{
         const filterSelectedPlayer = selectedPlayers.filter(selectedPlayer => selectedPlayer.name != player.name)
         setSelectedPlayers(filterSelectedPlayer);
         setCoin(coin + Number(player.price));
@@ -14,19 +15,13 @@ const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin })
   
   return (
     <div className="flex flex-col gap-4">
-      {selectedPlayers.map((player, index) => (
-        <div className="flex justify-between p-4 rounded-2xl bg-[#13131308] items-center" key={index}>
-            <div className="flex gap-2">
-                <img className="w-[80px] h-[80px] rounded-2xl" src={player.image} alt={player.name} />
-                <div>
-                    <h2 className="font-semibold md:text-2xl">{player.name}</h2>
-                    <p className="text-[#13131383]">{player.position}</p>
-                </div>
-            </div>
-            <button onClick={()=> handleDeleteSelecedPlayers(player)} className="btn text-red-500 rounded-full">
-                <RiDeleteBinLine />
-            </button>
-        </div>
+      {selectedPlayers.length === 0 ? 
+      <div className="flex flex-col justify-center items-center h-[400px]">
+        <h2 className="font-semibold text-2xl">No Player Selected</h2>
+        <p>Please add player from available tab</p>
+      </div> 
+      : selectedPlayers.map((player, index) => (
+            <SelectedCard key={index} player={player} handleDeleteSelectedPlayers={handleDeleteSelectedPlayers}></SelectedCard>
       ))}
     </div>
   );
